@@ -5,6 +5,13 @@
     <key>ru</key>
     <value>Стандартные подсистемы</value>
   </synonym>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <content>Catalog.Д_Должность</content>
+  <content>Catalog.Д_КонтактноеЛицо</content>
   <subsystems>АнализЖурналаРегистрации</subsystems>
   <subsystems>БазоваяФункциональность</subsystems>
   <subsystems>ВариантыОтчетов</subsystems>
