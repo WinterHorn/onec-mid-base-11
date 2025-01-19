@@ -23,6 +23,8 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.Д_Доставка.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.Д_Доставка.Form.ФормаСписка</defaultListForm>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="b2b65c48-7340-4e1b-840f-e81115610b17">
@@ -136,7 +138,7 @@
     <name>Д_КонтактноеЛицоКонтр</name>
     <synonym>
       <key>ru</key>
-      <value>Д контактное лицо контр</value>
+      <value>Контактное лицо контрагента</value>
     </synonym>
     <type>
       <types>CatalogRef.Д_КонтактноеЛицо</types>
@@ -151,7 +153,7 @@
     <name>Д_КонтактноеЛицоОрг</name>
     <synonym>
       <key>ru</key>
-      <value>Д контактное лицо орг</value>
+      <value>Контактное лицо организации</value>
     </synonym>
     <type>
       <types>CatalogRef.Д_КонтактноеЛицо</types>
@@ -178,4 +180,67 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <forms uuid="34eaa9d4-5973-40cb-9fec-0ef8178fffbf">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="bdbb4f27-9f80-4cb9-8c14-8dd2b9b8af4d">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="309239cd-3edf-4eb7-aba0-8cfdb61dfb8e">
+    <producedTypes>
+      <objectType typeId="8ccb25cc-d9e8-4898-9f31-08d68ecec855" valueTypeId="3962dbd1-12ae-4013-94ec-6075584c7be3"/>
+      <rowType typeId="028d02dd-9f07-400d-9a7e-8718a356bbd1" valueTypeId="65309d57-0bcf-4cea-ae46-d73bad71294f"/>
+    </producedTypes>
+    <name>Товары</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товары</value>
+    </synonym>
+    <attributes uuid="0efd1a96-2693-4e34-bd7d-c40bd800c000">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="bff80da5-305c-4834-92ec-b3c2c923bf6c">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
 </mdclass:Document>
